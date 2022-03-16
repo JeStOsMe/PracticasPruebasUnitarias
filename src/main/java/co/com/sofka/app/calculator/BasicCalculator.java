@@ -28,7 +28,7 @@ public class BasicCalculator {
         if(number2 == 0){
             return null;
         }else{
-            return number1 / number1;
+            return number1 / number2;
         }
     }
 }
