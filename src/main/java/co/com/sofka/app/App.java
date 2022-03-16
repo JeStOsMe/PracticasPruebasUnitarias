@@ -41,7 +41,7 @@ public class App {
         result = calculator.multiply(number1, number2);
         System.out.println(number1 + " * " + number2 + " = " + result);
 
-        result2 = calculator.divide(number1, number2);
+        result2 = calculator.divide((double)number1, (double)number2);
         System.out.println(number1 + " / " + number2 + " = " + result2);
     }
 }

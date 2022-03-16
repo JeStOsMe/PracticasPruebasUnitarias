@@ -22,13 +22,13 @@ public class BasicCalculator {
         return number1 * number2;
     }
 
-    public Double divide(Long number1, Long number2) {
+    public Double divide(Double number1, Double number2) {
         logger.info( "Dividing {} / {}", number1, number2 );
-        try{
-            return (double) (number1 / number2);
-        } catch(Exception ex){
-            ex.printStackTrace();
-            throw new IllegalArgumentException("No se puede dividir entre cero.");
+
+        if(number2 == 0){
+            return null;
+        }else{
+            return number1 / number1;
         }
     }
 }
