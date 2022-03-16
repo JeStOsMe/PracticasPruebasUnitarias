@@ -26,7 +26,7 @@ public class BasicCalculator {
         logger.info( "Dividing {} / {}", number1, number2 );
 
         if(number2 == 0){
-            return null;
+            return 0.0;
         }else{
             return number1 / number2;
         }
